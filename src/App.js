@@ -1,27 +1,19 @@
-import { Container } from "./components/Container/Container";
-import TaskListProvider from "./store/TaskListProvider";
-import styled from "styled-components";
-import React, {Component} from "react";
+import { Container } from "./containers/Container.js";
+import React, { Component } from "react";
 import TaskListContext from "./store/taskList-context";
+import Main from "./styled/App.styled";
 
 
-
-const Main = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 class App extends Component {
-  static contextType = TaskListContext
-  componentDidMount(){
-    this.context.clearStorage()
+  static contextType = TaskListContext;
+  componentDidMount() {
+    this.context.clearStorage();
   }
   render() {
     return (
-      
-        <Main>
-          <Container />
-        </Main>
+      <Main>
+        <Container />
+      </Main>
     );
   }
 }

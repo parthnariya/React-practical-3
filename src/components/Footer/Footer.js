@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import NewTaskForm from "./NewTaskForm";
+import NewTaskForm from "../../containers/NewTaskForm";
 import FooterStyleClass from "../../styled/Footer.style";
-import AddButton from '../UI/AddButton.js'
+import AddButton from '../../containers/Button.js'
 
 
 
